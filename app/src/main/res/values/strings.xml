@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Star Wars Quiz</string>
+    <string name="app_description">This is a Star Wars Quiz app made for yaadaouikfabsifg</string>
+    <string name="btn_text_select_category">Select Category</string>
 </resources>
