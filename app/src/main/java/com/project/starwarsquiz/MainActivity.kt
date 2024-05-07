@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun selectCategoryButtonClick(view: View) {
-        val intent = Intent(this@MainActivity, MainActivity2::class.java)
+        val intent = Intent(this@MainActivity, CategorySelection::class.java)
         startActivity(intent)
     }
 }
