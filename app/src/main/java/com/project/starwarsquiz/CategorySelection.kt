@@ -6,6 +6,6 @@ import android.os.Bundle
 class CategorySelection : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.category_selection)
+        setContentView(R.layout.activity_category_selection)
     }
 }

@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/rounded_star_jedi"
+        android:fontFamily="@font/alfa_slab_one"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/scheme_blue"
@@ -26,18 +26,17 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="298dp"
+        android:layout_width="wrap_content"
         android:layout_height="499dp"
+        android:text="@string/app_description"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/btnBeginQuiz"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        android:text="@string/app_description"/>
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
         android:id="@+id/btnBeginQuiz"
