@@ -3,14 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/rounded_star_jedi"
         android:text="@string/app_name"
         android:textAlignment="center"
@@ -21,29 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="298dp"
-        android:layout_height="499dp"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBeginQuiz"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        android:text="@string/app_description"/>
-
     <Button
         android:id="@+id/btnBeginQuiz"
 
+        tools:text="Select Category"
         android:layout_width="161dp"
         android:layout_height="58dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/scheme_red"
+        android:text="@string/btn_text_select_category"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -51,9 +36,34 @@
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        android:text="@string/btn_text_select_category"
-        tools:text="Select Category"/>
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
+    <RadioGroup
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBeginQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Character" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planets" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ships" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
