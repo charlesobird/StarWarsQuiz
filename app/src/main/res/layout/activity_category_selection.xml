@@ -31,21 +31,21 @@
         app:layout_constraintTop_toBottomOf="@+id/title">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbChoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Character"
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbChoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Planets"
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbChoice3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ships"

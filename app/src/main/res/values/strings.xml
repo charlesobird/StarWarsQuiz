@@ -2,4 +2,6 @@
     <string name="app_name">Star Wars Quiz</string>
     <string name="app_description">This is a Star Wars Quiz app made for yaadaouikfabsifg</string>
     <string name="btn_text_select_category">Select Category</string>
+    <string name="btn_text_submit_answer">Submit</string>
+    <string name="btn_text_restart_quiz">Restart Quiz</string>
 </resources>
