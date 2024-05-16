@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    tools:context=".QuestionResult">
+
+    <TextView
+        android:id="@+id/labelQuestionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/placeholder_question_num"
+        android:textAlignment="center"
+        android:textColor="@color/scheme_blue"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelQuestionNum" />
+
+    <TextView
+        android:id="@+id/labelCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/placeholder_score_label_qr"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelQuestion" />
+
+
+    <ImageView
+        android:id="@+id/answerResultIcon"
+        android:layout_width="156dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="372dp"
+        android:contentDescription="@string/answer_result_icon_content_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelCurrentScore"
+        app:srcCompat="@drawable/check_circle" />
+
+    <TextView
+        android:id="@+id/correctAnswerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/placeholder_correct_answer_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerResultIcon"
+        tools:text="[Correct Answer for the question]" />
+
+    <Button
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="161dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#58A558"
+        android:text="@string/next_question_button"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerLabel"
+        tools:text="@string/next_question_button" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#A86E78"
+        android:onClick="goBackToCategorySelection"
+        android:text="@string/btn_text_restart_quiz"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNextQuestion"
+        app:layout_constraintVertical_bias="0.205" />
+</androidx.constraintlayout.widget.ConstraintLayout>

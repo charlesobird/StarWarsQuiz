@@ -23,51 +23,77 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:layout_width="196dp"
-        android:layout_height="298dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBeginQuiz"
+        android:id="@+id/rgAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
         <RadioButton
             android:id="@+id/rbChoice1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Character"
-            android:textColor="@color/white" />
+            android:buttonTint="@color/scheme_blue"
+            android:text="@string/radio_characters"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/scheme_blue"
+            android:textColorLink="@color/scheme_blue" />
 
         <RadioButton
             android:id="@+id/rbChoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Planets"
+            android:text="@string/radio_planets"
             android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/rbChoice3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ships"
+            android:text="@string/radio_species"
             android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbChoice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ships"
+            android:textColor="@color/white" />
+
     </RadioGroup>
+
     <Button
-        android:id="@+id/btnBeginQuiz"
-        tools:text="Select Category"
+        android:id="@+id/btnPlayAgain"
         android:layout_width="161dp"
         android:layout_height="58dp"
-        android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/scheme_red"
-        android:text="@string/btn_text_select_category"
+        android:onClick="beginQuizButtonClick"
+        android:text="@string/btn_text_begin_quiz"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:cornerRadius="25dp"
-        android:onClick="beginQuizButtonClick"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Begin Quiz" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:padding="1dp"
+        android:text="@string/fake_frozen_app_disclaimer"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlayAgain"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

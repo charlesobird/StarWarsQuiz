@@ -2,6 +2,23 @@
     <string name="app_name">Star Wars Quiz</string>
     <string name="app_description">This is a Star Wars Quiz app made for yaadaouikfabsifg</string>
     <string name="btn_text_select_category">Select Category</string>
+    <string name="btn_text_begin_quiz">Begin Quiz</string>
     <string name="btn_text_submit_answer">Submit</string>
     <string name="btn_text_restart_quiz">Restart Quiz</string>
+    <string name="question_text">Question</string>
+    <string name="question_number_text">Question #</string>
+    <string name="placeholder_correct_answer_label">[Correct Answer for the question]</string>
+    <string name="next_question_button">Next Question</string>
+    <string name="question">Question</string>
+    <string name="placeholder_score_label_qr">Your Score: x/x</string>
+    <string name="answer_result_icon_content_desc">This is either a tick or cross to show that you got the question right or wrong</string>
+    <string name="placeholder_question_num">Question #</string>
+    <string name="fake_frozen_app_disclaimer">The app may appear frozen after pressing the button below: it isn\'t frozen, it\'s creating the questions.</string>
+    <string name="radio_characters">Characters</string>
+    <string name="radio_planets">Planet Climates</string>
+    <string name="radio_species">Species</string>
+    <string name="radio_ships">Ships</string>
+    <string name="your_results">Your Results</string>
+    <string name="play_again">Play Again</string>
+    <string name="question_number_template">Question %1$s</string>
 </resources>
