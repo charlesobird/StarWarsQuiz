@@ -2,51 +2,59 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:backgroundTint="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".QuizResults">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="@string/app_name"
+        android:text="@string/your_results"
         android:textAlignment="center"
         android:textColor="@color/scheme_blue"
         android:textSize="34sp"
-        android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/scoreLabel"
         android:layout_width="wrap_content"
-        android:layout_height="499dp"
-        android:text="@string/app_description"
-        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="x / x"
         android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnPlayAgain"
-        app:layout_constraintDimensionRatio="1:1"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
+    <TextView
+        android:id="@+id/fullScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Congratulations! You got full score!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel" />
+
     <Button
         android:id="@+id/btnPlayAgain"
-        android:layout_width="wrap_content"
+        android:layout_width="161dp"
         android:layout_height="58dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/scheme_red"
-        android:onClick="selectCategoryButtonClick"
-        android:text="@string/btn_text_select_category"
+        android:onClick="playAgainButtonClick"
+        android:text="@string/play_again"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -55,7 +63,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        tools:text="Select Category" />
+        app:layout_constraintTop_toBottomOf="@+id/fullScoreLabel"
+        app:layout_constraintVertical_bias="0.64" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
