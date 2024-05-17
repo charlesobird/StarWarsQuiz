@@ -40,8 +40,8 @@
 
     <RadioGroup
         android:id="@+id/rgAnswers"
-        android:layout_width="196dp"
-        android:layout_height="298dp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/btnSubmitAnswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -55,41 +55,45 @@
             android:backgroundTint="#FFFFFF"
             android:buttonTint="#FFFFFF"
             android:text="Choice 1"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/rbChoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Choice 2"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/rbChoice3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Choice 3"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/rbChoice4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Choice 4"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btnSubmitAnswer"
         android:layout_width="161dp"
-        android:layout_height="58dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/scheme_red"
         android:onClick="submitAnswerButtonClicked"
         android:text="@string/btn_text_submit_answer"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toTopOf="@+id/btnPlayAgain"
@@ -100,14 +104,14 @@
     <Button
         android:id="@+id/btnPlayAgain"
         android:layout_width="161dp"
-        android:layout_height="58dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#989999"
+        android:backgroundTint="#848484"
         android:onClick="goBackToCategorySelection"
         android:text="@string/btn_text_restart_quiz"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"

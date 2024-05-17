@@ -4,7 +4,10 @@ import android.os.Parcelable
 import com.squareup.moshi.Json
 import kotlinx.parcelize.Parcelize
 
-//@JsonClass(generateAdapter = true)
+// Each question category requires a model to go with it for the question information
+// This is used when converting the API Data into accessible objects
+// Without these models, the app wouldn't be able to read the API data properly.
+// Planet data class, holds information about a planet that the API returns
 @Parcelize
 data class Planet(
     val name: String? = null,
@@ -22,6 +25,7 @@ data class Planet(
     val url: String? = null
 ) : Parcelable
 
+// Character data class, holds information about a character that the API returns
 @Parcelize
 data class Character(
     val name: String? = null,
@@ -42,6 +46,7 @@ data class Character(
     val url: String? = null
 ) : Parcelable
 
+// Ship data class, holds information about a ship that the API returns
 @Parcelize
 data class Ship(
     val name: String? = null,
@@ -64,6 +69,7 @@ data class Ship(
     val url: String? = null
 ) : Parcelable
 
+// Species data class, holds information about a species that the API returns
 @Parcelize
 data class Species(
     val name: String? = null,

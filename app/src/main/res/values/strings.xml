@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Star Wars Quiz</string>
-    <string name="app_description">This is a Star Wars Quiz app made for yaadaouikfabsifg</string>
+    <string name="app_description">Embark on an intergalactic adventure with the ultimate Star Wars Quiz Galaxy app! Dive deep into the Star Wars universe and test your knowledge across exciting categories: Planet Climates, Characters, Species, and Ships</string>
     <string name="btn_text_select_category">Select Category</string>
     <string name="btn_text_begin_quiz">Begin Quiz</string>
     <string name="btn_text_submit_answer">Submit</string>
@@ -13,7 +13,7 @@
     <string name="placeholder_score_label_qr">Your Score: x/x</string>
     <string name="answer_result_icon_content_desc">This is either a tick or cross to show that you got the question right or wrong</string>
     <string name="placeholder_question_num">Question #</string>
-    <string name="fake_frozen_app_disclaimer">The app may appear frozen after pressing the button below: it isn\'t frozen, it\'s creating the questions.</string>
+    <string name="fake_frozen_app_disclaimer">Thank you for using the Star Wars Quiz Galaxy app! Please note that after pressing the button below, the app may appear frozen. This is not an issue; the app is actively creating and compiling your quiz questions. This process involves fetching data, randomizing questions, and optimizing content to ensure a unique and engaging experience. Please be patient as this may take a few moments. Your quiz will be ready shortly.</string>
     <string name="radio_characters">Characters</string>
     <string name="radio_planets">Planet Climates</string>
     <string name="radio_species">Species</string>
@@ -21,4 +21,7 @@
     <string name="your_results">Your Results</string>
     <string name="play_again">Play Again</string>
     <string name="question_number_template">Question %1$s</string>
+    <string name="score_label_text_template">Your Score: %1$s / %2$s</string>
+    <string name="question_number_label_template">Question %1$s</string>
+    <string name="correct_answer_template">The Correct Answer was: %1$s</string>
 </resources>

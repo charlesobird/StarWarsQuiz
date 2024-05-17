@@ -1,7 +1,9 @@
 package com.project.starwarsquiz
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.HapticFeedbackConstants
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -18,18 +20,24 @@ class CategorySelection : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category_selection)
 
+        // This is to
         val radioGroup = findViewById<RadioGroup>(R.id.rgAnswers)
-        radioGroup.setOnCheckedChangeListener { _, checkedId ->
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            group.isHapticFeedbackEnabled = true
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                group.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
+            }
             if (!radioGroup.checkedRadioButtonId.equals(null)) {
                 selectedCategory = findViewById<RadioButton>(checkedId).text.toString()
             }
         }
     }
 
-    fun beginQuizButtonClick(view: View) {
-        val intent = Intent(this@CategorySelection, QuestionPage::class.java)
-        findViewById<RadioGroup>(R.id.rgAnswers)
 
+    fun beginQuizButtonClick(view: View) {
+        view.isHapticFeedbackEnabled = true
+        view.performHapticFeedback(HapticFeedbackConstants.CONFIRM)
+        val intent = Intent(this@CategorySelection, QuestionPage::class.java)
         CoroutineScope(Dispatchers.IO).launch {
             val questionGenerators = QuestionGenerators()
             if (selectedCategory == resources.getString(R.string.radio_planets)) {
